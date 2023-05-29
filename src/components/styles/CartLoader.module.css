@@ -1,0 +1,7 @@
+:root {
+  --hue: 223;
+  --bg: hsl(var(--hue), 10%, 90%);
+  --fg: hsl(var(--hue), 10%, 10%);
+  --primary: rgb(59, 196, 123);
+  --trans-dur: 0.3s;
+}

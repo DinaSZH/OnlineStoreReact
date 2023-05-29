@@ -1,0 +1,49 @@
+.navbar {
+  height: 80px;
+  background-color: #8a9895e8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.navbar a {
+  text-decoration: none;
+  color: rgb(33, 31, 31);
+}
+.navbar h2 {
+  font-size: 40px;
+  transition: 1s;
+}
+.navbar h2:hover {
+  transition: 1s;
+
+  color: black;
+}
+.navbar h2 > span {
+  color: rgb(102, 177, 238);
+}
+.navBag {
+  display: flex;
+  align-items: center;
+  color: whitesmoke;
+
+  transition: 0.5s;
+}
+
+.icon {
+  font-size: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    padding: 0 1.5rem;
+  }
+  .navbar h2 {
+    font-size: 30px;
+    transition: 1s;
+  }
+}

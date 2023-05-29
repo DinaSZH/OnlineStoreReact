@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Sono:wght@300&display=swap");
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 15px;
+  width: fit-content;
+  margin: 20px auto;
+  gap: 10px;
+}
+.container_s {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container_s > div svg {
+  font-size: 60px;
+  color: rgb(255, 217, 0); /* fallback for old browsers */
+  margin-bottom: 5px;
+  margin: 5px auto;
+}
+.container .category {
+  gap: 5px;
+  margin: 0px 5px;
+  background-color: rgb(54, 53, 48);
+  padding: 10px;
+  border-radius: 10px;
+  font-family: "sono";
+  color: #d9d6e2;
+  font-weight: bold;
+}
+.container .category:hover {
+  cursor: pointer;
+  transition: 0.8s;
+  color: whitesmoke;
+  background-color: #1789e7;
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+  }
+  .container_s {
+    width: 100%;
+    flex-direction: row;
+    justify-content: start;
+  }
+  .container .category {
+    width: 100%;
+    text-align: center;
+  }
+}

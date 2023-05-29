@@ -1,0 +1,130 @@
+.card {
+  width: 300px;
+  height: 100%;
+  padding: 0.8em;
+  margin: 20px;
+  background: white;
+  position: relative;
+  overflow: visible;
+
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+img {
+  background-color: rgba(0, 0, 0, 0);
+}
+.textCategory {
+  background-color: rgba(128, 128, 128, 0.71);
+  border: 4px solid #f5f5f5;
+  width: 50%;
+  padding: 7px 0px;
+  margin: 0px auto;
+  border-radius: 50px;
+  transform: translateY(-55px);
+  color: whitesmoke;
+  text-align: center;
+  font-size: small;
+  z-index: 1;
+  text-align: center;
+}
+.cardInfo {
+  padding-top: 10%;
+}
+
+.cardFooter {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+}
+
+/*Text*/
+.textTitle {
+  font-weight: 700;
+  font-size: 1.2em;
+  line-height: 1.5;
+  cursor: pointer;
+  text-align: center;
+}
+
+.textBody {
+  font-size: 0.9em;
+  padding-bottom: 10px;
+}
+
+.button {
+  position: relative;
+  overflow: hidden;
+  outline: none;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: hsl(203, 76%, 69%);
+  border: solid 1px hsl(30, 1%, 29%);
+  font-family: inherit;
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.defaultBtn,
+.hoverBtn {
+  background-color: hsl(203, 76%, 69%);
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.hoverBtn {
+  position: absolute;
+  inset: 0;
+  background-color: hsl(203, 76%, 69%);
+  transform: translate(0%, 100%);
+}
+
+.defaultBtn span {
+  color: hsl(0, 0%, 100%);
+}
+
+.hoverBtn span {
+  color: hsl(60, 2%, 8%);
+}
+
+.button:hover .defaultBtn {
+  transform: translate(0%, -100%);
+}
+
+.button:hover .hoverBtn {
+  transform: translate(0%, 0%);
+}
+
+/*Hover*/
+
+.icon {
+  font-size: 30px;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+.corusel_img {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+    width: 60%;
+  }
+}
